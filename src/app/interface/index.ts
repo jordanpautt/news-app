@@ -20,9 +20,9 @@ export interface ISource {
   name: string;
 }
 
-export interface IArticlesByCategoryAndPage{
-[key: string]: {
-  page: number;
-  article: IArticle;
-};
+export interface IArticlesByCategoryAndPage {
+  [key: string]: {
+    page: number;
+    articles: IArticle[];
+  };
 }
